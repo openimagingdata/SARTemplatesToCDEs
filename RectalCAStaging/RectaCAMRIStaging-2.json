@@ -1,0 +1,119 @@
+[
+    {
+      "name": "EMVI",
+      "description": "Extramural Vascular Invasion, indicating tumor spread to nearby blood vessels.",
+      "attributes": [
+        {
+          "name": "Presence of EMVI",
+          "type": "choice",
+          "description": "Indicates whether Extramural Vascular Invasion is present.",
+          "values": [
+            {"name": "No", "description": "No evidence of EMVI."},
+            {"name": "Yes", "description": "EMVI is present."}
+          ]
+        },
+        {
+          "name": "Location of EMVI",
+          "type": "text",
+          "description": "Specific series and image number where EMVI is identified."
+        }
+      ]
+    },
+    {
+      "name": "Mesorectal Fascia (MRF) for T3 Tumors",
+      "description": "Assessment of the tumor's proximity to the mesorectal fascia in T3 tumors.",
+      "attributes": [
+        {
+          "name": "Shortest distance of tumor to MRF",
+          "type": "numeric",
+          "description": "The minimum distance from the tumor to the mesorectal fascia, measured in millimeters."
+        },
+        {
+          "name": "Location of MRF proximity",
+          "type": "text",
+          "description": "Location and image/series number indicating the tumor's proximity to the MRF."
+        },
+        {
+          "name": "Threatening or invading MRF",
+          "type": "choice",
+          "description": "Indicates whether a separate tumor deposit, lymph node, or EMVI is threatening or invading the MRF.",
+          "values": [
+            {"name": "No", "description": "No separate tumor deposit, lymph node, or EMVI threatening or invading the MRF."},
+            {"name": "Yes", "description": "Presence of separate tumor deposit, lymph node, or EMVI threatening or invading the MRF."}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tumor Deposits",
+      "description": "Identification of tumor deposits within the mesorectum, distinct from lymph nodes.",
+      "attributes": [
+        {
+          "name": "Presence of Tumor Deposits",
+          "type": "choice",
+          "description": "Indicates the presence of tumor deposits in the mesorectum.",
+          "values": [
+            {"name": "None identified", "description": "No tumor deposits identified."},
+            {"name": "Yes", "description": "Tumor deposits are present."}
+          ]
+        },
+        {
+          "name": "Details of Tumor Deposits",
+          "type": "text",
+          "description": "Series and image number of identified tumor deposits, including their number and location."
+        }
+      ]
+    },
+    {
+      "name": "Lymph Nodes",
+      "description": "Assessment of lymph nodes and tumor deposits in mesorectal/superior rectal region.",
+      "attributes": [
+        {
+          "name": "Mesorectal/superior rectal lymph nodes and tumor deposits status",
+          "type": "choice",
+          "description": "Classification of mesorectal/superior rectal lymph nodes and tumor deposits.",
+          "values": [
+            {"name": "N0", "description": "No visible lymph nodes or tumor deposits."},
+            {"name": "N+", "description": "Positive for lymph nodes/deposits, with specific criteria based on size and morphology."},
+            {"name": "Nx", "description": "Indeterminate status of lymph nodes or deposits."}
+          ]
+        },
+        {
+          "name": "Suspicious extra mesorectal lymph nodes",
+          "type": "choice",
+          "description": "Indicates the presence of suspicious lymph nodes outside the mesorectal region.",
+          "values": [
+            {"name": "No", "description": "No suspicious extra mesorectal lymph nodes."},
+            {"name": "Yes", "description": "Suspicious extra mesorectal lymph nodes present."}
+          ]
+        },
+        {
+          "name": "Details of extra mesorectal lymph nodes",
+          "type": "text",
+          "description": "Details of the extra mesorectal lymph nodes, including short axis diameter, location, and series/image number."
+        },
+        {
+          "name": "Locoregional lymph node locations",
+          "type": "text",
+          "description": "Specific locoregional lymph node locations and measurements, if applicable."
+        },
+        {
+          "name": "Distant lymph node locations (M1)",
+          "type": "text",
+          "description": "Specific distant lymph node locations and measurements, indicating metastasis (M1), if applicable."
+        }
+      ]
+    },
+    {
+      "name": "Other Findings",
+      "description": "Additional findings including bones, peritoneal metastases, or other incidental findings.",
+      "attributes": [
+        {
+          "name": "Details of Other Findings",
+          "type": "text",
+          "description": "Description of any other relevant findings not covered in the above categories."
+        }
+      ]
+    }
+  ]
+  

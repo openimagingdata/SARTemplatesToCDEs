@@ -1,0 +1,183 @@
+[
+    {
+      "name": "Primary Tumor",
+      "description": "Morphology, Location, and Characteristics of the primary tumor",
+      "attributes": [
+        {
+          "name": "Distance to anal verge",
+          "description": "The distance of the tumor to the anal verge",
+          "type": "numeric",
+          "unit": "cm"
+        },
+        {
+          "name": "Distance to top of sphincter complex/anorectal junction",
+          "description": "The distance of the tumor to the top of the sphincter complex or anorectal junction",
+          "type": "numeric",
+          "unit": "cm"
+        },
+        {
+          "name": "Relationship to anterior peritoneal reflection",
+          "description": "The tumor's relationship to the anterior peritoneal reflection",
+          "type": "choice",
+          "values": ["Above", "Straddles", "Below"]
+        },
+        {
+          "name": "Craniocaudal length",
+          "description": "The craniocaudal length of the tumor",
+          "type": "numeric",
+          "unit": "cm"
+        },
+        {
+          "name": "Tumor location",
+          "description": "The location of the tumor within the rectum",
+          "type": "choice",
+          "values": ["Upper (10-15 cm)", "Mid (5-10 cm)", "Lower (0-5 cm)"]
+        },
+        {
+          "name": "Tumor morphology",
+          "description": "The morphology of the tumor",
+          "type": "choice",
+          "values": ["Polypoid", "Annular", "Partly annular"]
+        },
+        {
+          "name": "Mucinous composition",
+          "description": "The mucinous composition of the tumor",
+          "type": "choice",
+          "values": ["No mucin", "Some mucin", "Mostly mucin"]
+        }
+      ]
+    },
+    {
+      "name": "MR-T Category",
+      "description": "Magnetic Resonance - T Category of the tumor",
+      "attributes": [
+        {
+          "name": "Tumor category",
+          "description": "Classification of the tumor based on MR-T category",
+          "type": "choice",
+          "values": ["Tx", "T1/2", "T3a", "T3b", "T3c", "T3d", "T4a", "T4b"]
+        },
+        {
+          "name": "Structures with possible invasion for T4b",
+          "description": "Specific structures possibly invaded by the tumor in T4b category",
+          "type": "free text"
+        }
+      ]
+    },
+    {
+      "name": "Low Rectal Tumors - Invasion of Anal Sphincter Complex",
+      "description": "Assessment of anal sphincter complex invasion in low rectal tumors",
+      "attributes": [
+        {
+          "name": "Invasion status",
+          "description": "Invasion status of the anal sphincter complex",
+          "type": "choice",
+          "values": ["Absent", "Invades internal sphincter only", "Invades IS and extends into ISS", "Invades IS + ISS + extends into or through external sphincter"]
+        },
+        {
+          "name": "Area of involvement",
+          "description": "Area of involvement in the anal canal",
+          "type": "choice",
+          "values": ["Upper anal canal", "Mid anal canal", "Distal anal canal"]
+        },
+        {
+          "name": "Description of external sphincter involvement",
+          "description": "Detailed description of external sphincter involvement",
+          "type": "free text"
+        }
+      ]
+    },
+    {
+      "name": "EMVI",
+      "description": "Extramural Vascular Invasion",
+      "attributes": [
+        {
+          "name": "EMVI status",
+          "description": "Presence or absence of EMVI",
+          "type": "choice",
+          "values": ["No", "Yes"]
+        },
+        {
+          "name": "Location of EMVI",
+          "description": "Specific location of EMVI",
+          "type": "free text"
+        }
+      ]
+    },
+    {
+      "name": "Mesorectal Fascia (MRF) for T3 Tumors",
+      "description": "Assessment of Mesorectal Fascia involvement in T3 tumors",
+      "attributes": [
+        {
+          "name": "Distance to MRF",
+          "description": "Shortest distance of tumor to the Mesorectal Fascia",
+          "type": "numeric",
+          "unit": "mm"
+        },
+        {
+          "name": "Separate tumor deposit, LN or EMVI threat or invasion to MRF",
+          "description": "Presence of separate tumor deposit, lymph node, or EMVI threatening or invading the MRF",
+          "type": "choice",
+          "values": ["No", "Yes"]
+        }
+      ]
+    },
+    {
+      "name": "Tumor Deposits",
+      "description": "Presence and characteristics of tumor deposits",
+      "attributes": [
+        {
+          "name": "Presence of tumor deposits",
+          "description": "Whether tumor deposits are identified",
+          "type": "choice",
+          "values": ["None identified", "Yes"]
+        },
+        {
+          "name": "Description of tumor deposits",
+          "description": "Detailed description of tumor deposits including number and location",
+          "type": "free text"
+        }
+      ]
+    },
+    {
+      "name": "Lymph Nodes",
+      "description": "Assessment of Lymph Nodes",
+      "attributes": [
+        {
+          "name": "Mesorectal/superior rectal lymph nodes and/or tumor deposits",
+          "description": "Status of mesorectal/superior rectal lymph nodes and tumor deposits",
+          "type": "choice",
+          "values": ["N0", "N+", "Nx"]
+        },
+        {
+          "name": "Suspicious extra mesorectal lymph nodes",
+          "description": "Presence of suspicious extra mesorectal lymph nodes",
+          "type": "choice",
+          "values": ["No", "Yes"]
+        },
+        {
+          "name": "Short axis diameter of lymph nodes",
+          "description": "Short axis diameter of suspicious lymph nodes",
+          "type": "numeric",
+          "unit": "mm"
+        },
+        {
+          "name": "Location of suspicious lymph nodes",
+          "description": "Location of suspicious extra mesorectal lymph nodes",
+          "type": "free text"
+        }
+      ]
+    },
+    {
+      "name": "Other Findings",
+      "description": "Other relevant findings in the radiology report",
+      "attributes": [
+        {
+          "name": "Additional findings",
+          "description": "Description of other incidental findings",
+          "type": "free text"
+        }
+      ]
+    }
+  ]
+  

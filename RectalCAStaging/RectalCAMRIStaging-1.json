@@ -1,0 +1,80 @@
+[
+    {
+      "name": "Primary Tumor: Morphology, Location, and Characteristics",
+      "description": "Detailed assessment of the primary rectal tumor's physical characteristics, position, and morphological composition.",
+      "attributes": [
+        {
+          "name": "Distance to the anal verge",
+          "type": "numeric",
+          "description": "The vertical distance from the lowest edge of the tumor to the anal verge, measured in centimeters."
+        },
+        {
+          "name": "Distance to the top of sphincter complex/anorectal junction",
+          "type": "numeric",
+          "description": "The distance from the tumor to the top of the sphincter complex or anorectal junction, measured in centimeters."
+        },
+        {
+          "name": "Relationship to anterior peritoneal reflection",
+          "type": "choice",
+          "description": "The tumor's position relative to the anterior peritoneal reflection.",
+          "values": [
+            {"name": "Above", "description": "The tumor is located above the anterior peritoneal reflection."},
+            {"name": "Straddles", "description": "The tumor straddles the anterior peritoneal reflection."},
+            {"name": "Below", "description": "The tumor is located below the anterior peritoneal reflection."}
+          ]
+        },
+        {
+          "name": "Craniocaudal length",
+          "type": "numeric",
+          "description": "The length of the tumor in the craniocaudal (head-to-tail) direction, measured in centimeters."
+        },
+        {
+          "name": "Tumor location",
+          "type": "choice",
+          "description": "The location of the tumor within the rectum, categorized by distance from the anal verge.",
+          "values": [
+            {"name": "Upper", "description": "Tumor located in the upper third of the rectum (10-15 cm from the anal verge)."},
+            {"name": "Mid", "description": "Tumor located in the middle third of the rectum (5-10 cm from the anal verge)."},
+            {"name": "Lower", "description": "Tumor located in the lower third of the rectum (0-5 cm from the anal verge)."}
+          ]
+        },
+        {
+          "name": "Morphology",
+          "type": "choice",
+          "description": "The shape and growth pattern of the tumor.",
+          "values": [
+            {"name": "Polypoid", "description": "The tumor has a growth pattern resembling a polyp."},
+            {"name": "Annular", "description": "The tumor has a ring-like structure, encircling the rectal lumen."},
+            {"name": "Partly annular", "description": "The tumor partially forms a ring-like structure around the rectal lumen."}
+          ]
+        },
+        {
+          "name": "Mucinous composition",
+          "type": "choice",
+          "description": "Indicates the presence and extent of mucin within the tumor.",
+          "values": [
+            {"name": "No mucin", "description": "The tumor does not contain mucinous components."},
+            {"name": "Some mucin", "description": "The tumor contains a moderate amount of mucin."},
+            {"name": "Mostly mucin", "description": "The majority of the tumor consists of mucin."}
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MR-T Category",
+      "description": "Magnetic Resonance Tumor (MR-T) Category describes the extent of tumor invasion as visualized on MRI.",
+      "attributes": [
+        {
+          "name": "Tumor visibility and extent",
+          "type": "choice",
+          "description": "Describes the extent of tumor penetration and invasion beyond the muscularis propria.",
+          "values": [
+            {"name": "Tx", "description": "No visible tumor or post transanal excision/polypectomy."},
+            {"name": "T1/2", "description": "Tumor confined within the rectal wall."},
+            {"name": "T3a", "description": "Tumor extends less than 1 mm beyond the muscularis propria."},
+            {"name": "T3b", "description": "Tumor extends 1-5 mm beyond the muscularis propria."},
+            {"name": "T3c", "description": "Tumor extends 5-15 mm beyond the muscularis propria."},
+            {"name": "T3d", "description": "Tumor extends more than 15 mm beyond the muscularis propria."},
+            {"name": "T4a", "description": "Tumor involves the anterior peritoneal reflection, indicated by thickening or nodularity."},
+            {"name": "T4b", "description": "Tumor
+  
